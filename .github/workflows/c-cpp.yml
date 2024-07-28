@@ -20,7 +20,13 @@ jobs:
 
       - name: Build kernel
         run: |
-          ls /usr/lib
+          echo ============================
+          ls /usr/lib/llvm-10/lib/
+          echo ============================
+          ls /usr/lib/llvm-11/lib/
+          echo ============================
+          ls /usr/lib/llvm-12/lib/
+          echo ============================
           bash build.sh
 
       - name: Upload boot image
