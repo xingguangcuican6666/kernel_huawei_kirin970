@@ -20,6 +20,7 @@ jobs:
 
       - name: Build kernel
         run: |
+          which real-aarch64-linux-android-gcc
           sudo ln -s /usr/lib/bfd-plugins/liblto_plugin.so /usr/lib/
           bash build.sh
 
