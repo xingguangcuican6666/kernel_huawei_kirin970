@@ -20,9 +20,6 @@ jobs:
 
       - name: Build kernel
         run: |
-          echo ============================
-          find / -name liblto_plugin.so
-          echo ============================
           bash build.sh
 
       - name: Upload boot image
